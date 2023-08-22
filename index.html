@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Recomendaciones de Películas | Héctor Guzman</title>
+</head>
+<body>
+    <header>
+        <h1>Recomendaciones de Películas (género Thriller)</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#pelicula1">El silencio de los corderos</a></li>
+            <li><a href="#pelicula2">Seven</a></li>
+            <li><a href="#pelicula3">El sexto sentido</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="pelicula1">
+            <h2>"El silencio de los corderos" (1991)</h2>
+            <img class="poster" src="https://m.media-amazon.com/images/M/MV5BNDkzYTJjYTctMWY3My00ZmZkLTgyYjgtZjllMDQ5YTM2YTAzXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_FMjpg_UX1100_.jpg" alt="Póster de El silencio de los corderos">
+            <p>Dirigida por Jonathan Demme <br>
+                Esta película sigue a Clarice Starling, una joven agente del FBI, mientras busca la ayuda del asesino en serie encarcelado Hannibal Lecter para atrapar a otro asesino en serie. La película es conocida por su intensa atmósfera y actuaciones memorables.</p>
+            <a class="pic" href="https://www.ejemplo.com/pelicula1" target="_blank">
+                <img class="pic__container" src="https://filmgrab.files.wordpress.com/2013/06/1165.jpg" alt="Link al trailer de la pelicula">
+            </a>
+        </section>
+        
+        <section id="pelicula2">
+            <h2>"Seven" (1995)</h2>
+            <img class="poster" src="https://m.media-amazon.com/images/M/MV5BNzZiMTk2OTMtMDgwYi00YWJlLWIyZmItOTZjMWZkMmU3NTE5XkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_FMjpg_UX1134_.jpg" alt="Póster de Seven">
+            <p>Dirigida por David Fincher <br>
+                Esta película sigue a dos detectives mientras investigan una serie de asesinatos brutales basados en los siete pecados capitales. La trama sombría y retorcida, junto con un enfoque en la psicología de los personajes, la convierten en una destacada película de thriller.</p>
+            <a class="pic" href="https://www.ejemplo.com/pelicula2" target="_blank">
+                <img class="pic__container" src="https://film-grab.com/wp-content/uploads/photo-gallery/60%20(801).jpg?bwg=1547383744" alt="Link al trailer de la pelicula">
+            </a>
+        </section>
+        
+        <section id="pelicula3">
+            <h2>"El sexto sentido" (1999)</h2>
+            <img class="poster" src="https://m.media-amazon.com/images/M/MV5BMjllZDNlZTctYjRlNy00MzlmLTlhMTEtODY0NDdlM2UwNjM4XkEyXkFqcGdeQXVyMjgyNDU4MjE@._V1_FMjpg_UX622_.jpg" alt="Póster de El sexto sentido">
+            <p>Dirigida por M. Night Shyamalan <br>
+                Esta película cuenta la historia de un niño que afirma poder ver y comunicarse con los muertos. Un psicólogo infantil intenta ayudar al niño mientras lidia con sus propios problemas personales. La película es conocida por su sorprendente giro en la trama y su atmósfera misteriosa.</p>
+            <a class="pic" href="https://www.youtube.com/watch?v=3-ZP95NF_Wk" target="_blank">
+                <img class="pic__container" src="https://film-grab.com/wp-content/uploads/photo-gallery/37%20(1184).jpg?bwg=1547470833" alt="Link al trailer de la pelicula">
+            </a>
+        </section>
+    </main>
+    
+    <aside>
+        <h2>Trailer de Película 1</h2>
+        <div class="iframe__container">
+            <iframe width="1663" height="774" src="https://www.youtube.com/embed/Psd65AeD9RI" title="El Silencio de los Inocentes (1991) - Trailer Original Subtitulado en Español" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </aside>
+    
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    
+    <footer>
+        <h3>Formulario de Opiniones</h3>
+        <form action="submit.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            
+            <label>Calificación:</label><br>
+            <fieldset>
+                <legend>Por favor, elige una opción:</legend>
+                <div>
+                    <input type="radio" id="option1" name="rating" value="excelente" />
+                    <label for="option1">Excelente</label>
+                </div>
+                <div>
+                    <input type="radio" id="option2" name="rating" value="bueno" />
+                    <label for="option2">Bueno</label>
+                </div>
+                <div>
+                    <input type="radio" id="option3" name="rating" value="regular" />
+                    <label for="option3">Regular</label>
+                </div>
+            </fieldset>
+            
+            <label>Géneros Favoritos:</label><br>
+            <fieldset>
+                <legend>Selecciona tus géneros favoritos:</legend>
+                <div>
+                    <input type="checkbox" id="genre1" name="genres" value="accion" />
+                    <label for="genre1">Acción</label>
+                
+                    <input type="checkbox" id="genre2" name="genres" value="suspenso" />
+                    <label for="genre2">Suspenso</label>
+                
+                    <input type="checkbox" id="genre3" name="genres" value="drama" />
+                    <label for="genre3">Drama</label>
+                </div>
+            </fieldset>
+            
+            <label for="sugerencia">Sugerencias:</label><br>
+            <textarea id="sugerencia" name="sugerencia" rows="4" cols="50"></textarea><br>
+            
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" list="paises" required>
+            <datalist id="paises">
+                <option value="Argentina"></option>
+                <option value="México"></option>
+                <option value="España"></option>
+                <!-- Agregar más opciones -->
+            </datalist><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </footer>
+       
+</body>
+</html>
